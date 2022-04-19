@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
@@ -17,6 +18,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.io.Console;
@@ -56,6 +58,7 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.registerUser:
                 registerUser();
+                startActivity(new Intent(this, MainActivity.class));
                 break;
         }
     }
@@ -91,8 +94,7 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
-                    System.out.println("ne gec");
-                    User user = new User(email);
+                    /*User user = new User(email);
 
                     FirebaseDatabase.getInstance().getReference("Users")
                             .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
@@ -107,11 +109,14 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
                             //    progressBar.setVisibility(View.GONE);
                             }
                         }
-                    });
+                    });*/
+
+                    Toast.makeText(RegisterUser.this,"Sikeres regisztráció", Toast.LENGTH_LONG).show();
+                    FirebaseUser user = mAuth.getCurrentUser();
+
 
                 }else{
                     Toast.makeText(RegisterUser.this, "Sikertelen regisztráció", Toast.LENGTH_LONG).show();
-                    progressBar.setVisibility(View.GONE);
                 }
             }
         });

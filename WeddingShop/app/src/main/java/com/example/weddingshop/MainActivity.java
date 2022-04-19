@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private TextView register;
     private EditText editTextEmail, editTextPassword;
-    private Button signIn;
+    private Button signIn, toShop;
 
     private FirebaseAuth mAuth;
 
@@ -35,6 +35,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         signIn = (Button) findViewById(R.id.signin);
         signIn.setOnClickListener(this);
+
+        toShop = (Button) findViewById(R.id.toshop);
+        toShop.setOnClickListener(this);
 
         editTextEmail = (EditText) findViewById(R.id.email);
         editTextEmail.setOnClickListener(this);
@@ -53,6 +56,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.signin:
                 userLogin();
+                break;
+            case R.id.toshop:
+                startActivity(new Intent(this, Shop.class));
                 break;
         }
     }
