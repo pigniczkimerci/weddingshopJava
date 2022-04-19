@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1015131910960",
+    "project_id": "fir-java-1df33",
+    "storage_bucket": "fir-java-1df33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015131910960:android:22f5cf3658d1c2c0db8ef5",
+        "android_client_info": {
+          "package_name": "com.example.weddingshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1015131910960-ev1qtcgimf88aikg3s75lhhap821k7h8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0_MCvfvkca0ChkKodMtVdA4CbUOdfZHM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1015131910960-ev1qtcgimf88aikg3s75lhhap821k7h8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
