@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WeddingShop">
         <activity
-            android:name=".Shop"
+            android:name=".ActivityShop"
+            android:exported="false" />
+        <activity
+            android:name=".AddShop"
             android:exported="false" />
         <activity
             android:name=".Logout"

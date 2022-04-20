@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 userLogin();
                 break;
             case R.id.toshop:
-                startActivity(new Intent(this, Shop.class));
+                startActivity(new Intent(this, ActivityShop.class));
                 break;
         }
     }
