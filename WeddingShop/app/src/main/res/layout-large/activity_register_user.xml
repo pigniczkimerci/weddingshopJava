@@ -8,11 +8,12 @@
 
     <EditText
         android:id="@+id/emailReg"
-        android:layout_width="211dp"
-        android:layout_height="47dp"
+        android:layout_width="473dp"
+        android:layout_height="96dp"
         android:ems="10"
         android:hint="E-mail cím"
         android:inputType="textEmailAddress"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -25,13 +26,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Regisztráció"
-        android:textSize="60sp"
+        android:textSize="80sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.077" />
+        app:layout_constraintVertical_bias="0.225" />
 
     <EditText
         android:id="@+id/passwordReg"
@@ -39,6 +39,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Jelszó"
+        android:textSize="40sp"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,9 +50,10 @@
 
     <Button
         android:id="@+id/registerUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="412dp"
+        android:layout_height="126dp"
         android:text="Regisztráció"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

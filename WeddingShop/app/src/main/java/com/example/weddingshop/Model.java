@@ -1,22 +1,17 @@
 package com.example.weddingshop;
 
-public class Product {
+public class Model {
+    String nev, ar, kategoria, url;
+    Model()
+    {
 
-    private String id, nev,ar,kategoria,kep;
-
-    public Product() {
     }
-
-
-
-    public Product(String id, String nev, String ar, String kep) {
+    public Model(String nev, String ar, String kategoria, String url) {
         this.nev = nev;
         this.ar = ar;
-        this.id = id;
-        this.kep = kep;
+        this.kategoria = kategoria;
+        this.url = url;
     }
-
-
 
     public String getNev() {
         return nev;
@@ -42,11 +37,11 @@ public class Product {
         this.kategoria = kategoria;
     }
 
-    public String getKep() {
-        return kep;
+    public String getUrl() {
+        return url;
     }
 
-    public void setKep(String kep) {
-        this.kep = kep;
+    public void setUrl(String url) {
+        this.url = url;
     }
 }
