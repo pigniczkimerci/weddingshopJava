@@ -13,13 +13,13 @@
             android:name=".ActivityShop"
             android:exported="false" />
         <activity
-            android:name=".AddShop"
+            android:name=".AddShopActivity"
             android:exported="false" />
         <activity
-            android:name=".Logout"
+            android:name=".LogoutActivity"
             android:exported="false" />
         <activity
-            android:name=".RegisterUser"
+            android:name=".RegisterUserActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -142,10 +142,8 @@ public class MyAdapter extends FirebaseRecyclerAdapter<Model,MyAdapter.myviewhol
             img=(CircleImageView) itemView.findViewById(R.id.img);
             nev =(TextView)itemView.findViewById(R.id.nev);
             ar =(TextView)itemView.findViewById(R.id.ar);
-            kategoria =(TextView)itemView.findViewById(R.id.kategoria);
+           // kategoria =(TextView)itemView.findViewById(R.id.kategoria);
 
-           /* edit=(ImageView)itemView.findViewById(R.id.editicon);
-            delete=(ImageView)itemView.findViewById(R.id.deleteicon);*/
             edit  = (TextView) itemView.findViewById(R.id.editicon);
             delete = (TextView) itemView.findViewById(R.id.deleteicon);
         }
