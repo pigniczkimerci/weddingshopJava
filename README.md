@@ -8,3 +8,5 @@
 - plíz amik már az adatbázisban voltak termékek azokat ne töröld ki
 - Ha valami nem megy akkor keress dc-n: (.merci.)#3589
 
+Igen összecseréltem a mobilakot meg a webkertet:
+https://github.com/pigniczkimerci/weddingshop
